@@ -2,3 +2,7 @@ opencv-python
 numpy
 scikit-learn
 mediapipe
+fastapi
+uvicorn
+python-multipart
+jinja2

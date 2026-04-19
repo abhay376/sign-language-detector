@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Detector & Portfolio</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Left Side: App / Webcam -->
+        <div class="app-section">
+            <div class="video-container">
+                <video id="webcam" autoplay playsinline></video>
+                <div class="overlay">
+                    <div class="status-badge" id="statusBadge">
+                        <div class="pulse"></div>
+                        <span id="statusText">Connecting WebCam...</span>
+                    </div>
+                    <div class="prediction-box">
+                        <div class="prediction-text" id="predictionDisplay">--</div>
+                        <div class="confidence-text" id="confidenceDisplay">Show your hand to start detecting</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="toggleBtn"><i class="fas fa-video"></i> Toggle Camera</button>
+            </div>
+        </div>
+
+        <!-- Right Side: Resume / Portfolio -->
+        <div class="portfolio-section">
+            <h1>Hi, I'm Abhay 👋</h1>
+            <p class="subtitle">A passionate developer building AI-driven applications and interactive web experiences. Check out my Sign Language Detector in action!</p>
+            
+            <div class="skills-section">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">OpenCV & MediaPipe</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">HTML / CSS / JavaScript</span>
+                    <span class="skill-tag">Scikit-Learn</span>
+                </div>
+                
+                <h2>Project Stack</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-server"></i> <b>Backend:</b> FastAPI handling Python Mediapipe models</p>
+                    <p><i class="fas fa-brain"></i> <b>Model:</b> Custom trained RandomForest via Scikit-Learn</p>
+                    <p><i class="fas fa-code"></i> <b>Frontend:</b> Vanilla HTML5 Canvas & REST API Fetching</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
