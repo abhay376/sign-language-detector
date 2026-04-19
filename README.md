@@ -2,9 +2,8 @@
 
 An interactive, real-time web application that leverages computer vision and machine learning to detect and classify American Sign Language (ASL) gestures directly via your browser's webcam.
 
-## 🔗 Live Application
-**👉 [View the Live Application Here](https://sign-language-detector.onrender.com)**  
-*(Note: Replace the link above with your actual deployment URL from Render)*
+## 🔗 Live Portfolio
+**👉 [View the Live Portfolio Here](https://sign-language-detector.vercel.app)**
 
 ---
 
@@ -33,6 +32,7 @@ Once FastAPI has the image array, it goes through a dual-model pipeline:
 - **Machine Learning Engine:** `Scikit-Learn` (RandomForest Model), `Google MediaPipe` (Hand Landmarker SDK)
 - **Image Processing:** `OpenCV`, `NumPy`
 - **Frontend UI:** `HTML5 Canvas`, Premium Dark Mode `CSS`, `Vanilla JS`
+- **Deployment:** `Vercel` (Static Portfolio)
 
 ---
 
@@ -50,9 +50,3 @@ To run this application on your own machine:
    uvicorn main:app --reload
    ```
 4. Open the displayed `localhost:8000` link in your web browser.
-
----
-
-## 🚀 Deployment (Render)
-This repository includes a `render.yaml` infrastructure-as-code blueprint.
-It is deployed to Render's Web Service platform to ensure it can successfully compile the heavy ML dependencies (`OpenCV`, `MediaPipe`) in isolation.
