@@ -2,8 +2,6 @@
 
 An interactive, real-time web application that leverages computer vision and machine learning to detect and classify American Sign Language (ASL) gestures directly via your browser's webcam.
 
-## 🔗 Live Portfolio
-**👉 [View the Live Portfolio Here](https://sign-language-detector.vercel.app)**
 
 ---
 
